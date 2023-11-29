@@ -1,0 +1,78 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   char Name;
+   int input,Plans,solution;
+   const int Base = 2000;
+   const int Coaching = 700;
+   const int Cardio = 500;
+   const int MMASpaces = 1200;
+
+   printf("Welcome Spartan,Feel Home at berbariens GYM Here Men and only Real-Men are Made.\n");
+
+   sleep(2);
+
+   printf("Type your name to add you to our Spartans list :\n");
+
+   scanf("%s",&Name);
+
+   printf("Done!! Welcome %s now let's set your subscription fee\n",&Name);
+
+   sleep(2);
+
+   printf("Base Fee is 2000DA\n Add any of our services : Coaching \t MMA Spaces \t Cardio \n");
+   printf("\n 1 for yes\n 2 for no\n");
+   scanf("%d",&Plans);
+   if (Plans ==2){
+    printf("\n your monthly Fee is base 2000\n");
+    exit(0);
+   }
+   else if (Plans == 1) {
+
+   printf("1.Coaching\n 2. Cardio\n 3.Coaching and Cardio\n 4.MMA Spaces\n 5.MMA Spaces and Coaching\n 6.ALL Services\n");
+scanf("%d",&input);
+   if(input==1,2,3,4,5,6){
+   switch(input){
+
+       case 1: solution = Base + Coaching;
+       printf("%s your Subscription Fee is %iDA\n",&Name,solution);
+       break;
+
+       case 2: solution = Base + Cardio;
+       printf("%s your Subscription Fee is %iDA\n",&Name,solution);
+       break;
+
+       case 3: solution = Base + Coaching + Cardio;
+       printf("%s your Subscription Fee is %iDA\n",&Name,solution);
+       break;
+
+       case 4: solution = Base + MMASpaces;
+       printf("%s your Subscription Fee is %iDA\n",&Name,solution);
+       break;
+
+       case 5: solution = Base + Coaching + MMASpaces;
+       printf("%s your Subscription Fee is %iDA\n",&Name,solution);
+       break;
+
+       case 6: solution = Base + Coaching + Cardio + MMASpaces;
+       printf("%s your Subscription Fee is %iDA\n",&Name,solution);
+       break;
+   }
+   }
+   else {
+    printf("Leave brother you are not smart enough");
+   }
+
+   }
+   else{
+    printf("THINK YOU'RE SMART ENOUGH HUH!!");
+    exit(0);
+   }
+
+    printf("Welcome to our community Spartan\n");
+    printf("Your subscription will come to it's end after 30 Days full of exercising and PROGRESS!! Keep your head up SPARTAN\n");
+}
+
+
