@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int input;
+ char start;
+ float solution,Value,Value2;
+ float kgstolbs = 2.2;
+ float inchestoCms = 0.3048;
+ float kmstomile = 0.621371;
+  printf("Press t to start :\n");
+  scanf("%c",&start);
+  if (start!='t'){
+    printf("Do what you're told dumb\n");
+    exit(0);
+  }
+
+  if (start=='t')
+    {
+  printf("Now choose your desired operation :\t");
+  }
+
+  printf("1.kgstolbs\t 2.inchestoCms\t 3.kmstomile :");
+  sleep(1);
+  scanf("%i",&input);
+
+  if (input == 1,2,3){
+  switch(input){
+      case 1: printf("Give Value in kgs :\n");
+      scanf("%f",&Value);
+      solution = Value * kgstolbs ;
+      printf("%f is equal to %f in lbs:",Value,solution);
+      break;
+       case 2: printf("Give Value in inches:\n");
+      scanf("%f",&Value);
+      solution = Value * inchestoCms;
+      printf("%f is equal to %f in Cms :",Value,solution);
+      break;
+       case 3: printf("Give Value in kms:\n");
+      scanf("%f",&Value);
+      solution = Value * kmstomile;
+      printf("%f is equal to %f in miles :\n",Value,solution);
+      break;
+  }
+  }
+   if (input<1){
+    printf("ERROR!!");
+    exit(0);
+  }
+  if (input>3){
+    printf("ERROR!!");
+    exit(0);
+  }
+  printf("rate this project out of 10! :\t");
+  scanf("%i",&Value2);
+  printf("No need for your rating as long as it works it's a 10");
+  }
+
