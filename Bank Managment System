@@ -1,0 +1,236 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    //there are three Persons who have already an account whom are Morad Nour Islem.
+    int p,Add,solution,Withdraw,W;
+    int n,r;
+    char er;
+    long int Balance1 = 20000;
+    long int Balance3 = 1000000;
+    long int Balance2 = 3400000;
+    int pincode ;
+    int Tries = 1;
+
+printf("ABC Bank :\n");
+sleep(1);
+printf("Type three Zeros then A\n");
+scanf("%i",&n);
+if(n==000700){
+        printf("Welcome Nour\n");
+    printf("Nour, enter your pincode :\n");
+    scanf("%i",&pincode);
+    if(pincode==2411){
+        printf("Pick desired service :\n");
+        printf("1. Check your Account \n 2. Add money to your account\n 3. withdraw Money\n");
+        scanf("%i",&p);
+        switch(p){
+        case 1: printf("Your account balance is %iDA\n",Balance1);
+         printf("Welcome at every moment");
+        break;
+        case 2:printf("Type the amount you want to add\n");
+        scanf("%i",&Add);
+        solution = Balance1 + Add;
+        printf("Your Balance Now is %iDA\n",solution);
+         printf("Welcome at every moment");
+        break;
+        case 3: printf("Type the amount of money you would like to withdraw\n");
+        scanf("%i",&Withdraw);
+        solution = Balance1 - Withdraw;
+        if (Balance1<Withdraw){
+            printf("You don't have Enough Money!!");
+            exit(0);
+        }
+        printf("Your Balance is %iDA\n",solution);
+        printf("Welcome at every moment");
+        break;
+        }
+        }
+   else{
+    do{
+            printf("Attempts :%i",Tries);
+        printf("\nTry again :\n");
+        scanf("%i",&pincode);
+
+    Tries++;
+    if (pincode==2411){
+         printf("Pick desired service :\n");
+        printf("1. Check your Account \n 2. Add money to your account\n 3. withdraw Money\n");
+        scanf("%i",&p);
+        switch(p){
+        case 1: printf("Your account balance is %iDA\n",Balance1);
+         printf("Welcome at every moment");
+        break;
+        case 2:printf("Type the amount you want to add\n");
+        scanf("%i",&Add);
+        solution = Balance1 + Add;
+        printf("Your Balance Now is %iDA\n",solution);
+         printf("Welcome at every moment");
+        break;
+        case 3: printf("Type the amount of money you would like to withdraw\n");
+        scanf("%i",&Withdraw);
+        solution = Balance1 - Withdraw;
+          if (Balance1<Withdraw){
+            printf("You don't have Enough Money!!");
+            exit(0);
+        }
+        printf("Your Balance is %iDA\n",solution);
+        printf("Welcome at every moment");
+        break;
+        exit(0);
+    }
+    }
+    else{
+        printf("You ran out of attempts Try again after 30 minutes\n");
+        exit(0);
+    }
+    }
+    while(Tries<=3);
+    }
+}
+
+else if(n==000543){
+        printf("Welcome Morad\n");
+    printf("Morad, enter your pincode :\n");
+    scanf("%i",&pincode);
+    if(pincode==6446){
+        printf("Pick desired service :\n");
+        printf("1. Check your Account \n 2. Add money to your account\n 3. withdraw Money\n");
+        scanf("%i",&p);
+        switch(p){
+        case 1: printf("Your account balance is %iDA\n",Balance2);
+         printf("Welcome at every moment");
+        break;
+        case 2:printf("Type the amount you want to add\n");
+        scanf("%i",&Add);
+        solution = Balance2 + Add;
+        printf("Your Balance Now is %iDA\n",solution);
+         printf("Welcome at every moment");
+        break;
+        case 3: printf("Type the amount of money you would like to withdraw\n");
+        scanf("%i",&Withdraw);
+        solution = Balance2 - Withdraw;
+          if (Balance2<Withdraw){
+            printf("You don't have Enough Money!!");
+            exit(0);
+        }
+        printf("Your Balance is %iDA\n",solution);
+        printf("Welcome at every moment");
+        break;
+        }
+        }
+     else{
+    do{
+            printf("Attempts :%i",Tries);
+        printf("\nTry again :\n");
+        scanf("%i",&pincode);
+
+    Tries++;
+    if (pincode==6446){
+         printf("Pick desired service :\n");
+        printf("1. Check your Account \n 2. Add money to your account\n 3. withdraw Money\n");
+        scanf("%i",&p);
+        switch(p){
+        case 1: printf("Your account balance is %iDA\n",Balance2);
+         printf("Welcome at every moment");
+        break;
+        case 2:printf("Type the amount you want to add\n");
+        scanf("%i",&Add);
+        solution = Balance2 + Add;
+        printf("Your Balance Now is %iDA\n",solution);
+         printf("Welcome at every moment");
+        break;
+        case 3: printf("Type the amount of money you would like to withdraw\n");
+        scanf("%i",&Withdraw);
+        solution = Balance2 - Withdraw;
+          if (Balance2<Withdraw){
+            printf("You don't have Enough Money!!");
+            exit(0);
+        }
+        printf("Your Balance is %iDA\n",solution);
+        printf("Welcome at every moment");
+        break;
+        exit(0);
+    }
+     exit(0);
+    }
+    }
+    while(Tries<=3);
+     }
+    }
+    else if(n==000212){
+        printf("Welcome Islem\n");
+    printf("Islem, enter your pincode :\n");
+    scanf("%i",&pincode);
+    if(pincode==2332){
+        printf("Pick desired service :\n");
+        printf("1. Check your Account \n 2. Add money to your account\n 3. withdraw Money\n");
+        scanf("%i",&p);
+        switch(p){
+        case 1: printf("Your account balance is %iDA\n",Balance3);
+         printf("Welcome at every moment");
+        break;
+        case 2:printf("Type the amount you want to add\n");
+        scanf("%i",&Add);
+        solution = Balance3 + Add;
+        printf("Your Balance Now is %iDA\n",solution);
+         printf("Welcome at every moment");
+        break;
+        case 3: printf("Type the amount of money you would like to withdraw\n");
+        scanf("%i",&Withdraw);
+        solution = Balance3 - Withdraw;
+          if (Balance3<Withdraw){
+            printf("You don't have Enough Money!!");
+            exit(0);
+        }
+        printf("Your Balance is %iDA\n",solution);
+        printf("Welcome at every moment");
+        break;
+        }
+        }
+      else{
+    do{
+            printf("Attempts :%i",Tries);
+        printf("\nTry again :\n");
+        scanf("%i",&pincode);
+
+    Tries++;
+    if (pincode==2332){
+         printf("Pick desired service :\n");
+        printf("1. Check your Account \n 2. Add money to your account\n 3. withdraw Money\n");
+        scanf("%i",&p);
+        switch(p){
+        case 1: printf("Your account balance is %iDA\n",Balance3);
+         printf("Welcome at every moment");
+        break;
+        case 2:printf("Type the amount you want to add\n");
+        scanf("%i",&Add);
+        solution = Balance3 + Add;
+        printf("Your Balance Now is %iDA\n",solution);
+         printf("Welcome at every moment");
+        break;
+        case 3: printf("Type the amount of money you would like to withdraw\n");
+        scanf("%i",&Withdraw);
+        solution = Balance3 - Withdraw;
+          if (Balance3<Withdraw){
+            printf("You don't have Enough Money!!");
+            exit(0);
+        }
+        printf("Your Balance is %iDA\n",solution);
+        printf("Welcome at every moment");
+        break;
+        exit(0);
+    }
+     exit(0);
+    }
+    }
+    while(Tries<=3);
+      }
+    }
+     else {
+            printf("User Not Found");
+    exit(0);
+     }
+}
